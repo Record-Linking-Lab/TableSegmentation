@@ -312,7 +312,7 @@ if __name__ == "__main__":
     parser.add_argument('-o', '--outpath', required=False, default='')
     parser.add_argument('-i', '--outimg', required=False, default='')
     parser.add_argument('-t', '--template', required=False, default='')
-    parser.add_argument('-f', '--filter', type=bool, choices=range(0, 4), required=False, default=True)
+    parser.add_argument('-f', '--filter', type=int, choices=[0, 1], required=False, default=1)
     parser.add_argument('-r', '--rows', type=int, required=False, default=51)
     args = parser.parse_args()
     mainf(args.imgpath, args.outpath, args.outimg, args.template, args.filter, args.rows)
