@@ -1,8 +1,8 @@
 import os, cv2, traceback
 import numpy as np
 
-imgpath = 'copy/c1930/ims'
-outpath = 'copy/c1930/deskew2'
+imgpath = 'put/path/here'
+outpath = ''
 
 def line_slope(l):
     if l[0,0] == l[0,2]: return 99999999

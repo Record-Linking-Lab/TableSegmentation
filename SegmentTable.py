@@ -301,7 +301,7 @@ def mainf(imgpath, outpath, outimg, template, filterlvl, exprows, data=''):
     if '.' not in outpath:
         if not outpath.endswith('/'): outpath += '/'
         outpath += filename
-    if '.' not in outimg:
+    if outimg and '.' not in outimg:
         if not outimg.endswith('/'): outimg += '/'
         outimg += filename
     export_seg(img, outpath, avgH, avgV, templateH, templateV, outimg)
