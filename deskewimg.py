@@ -1,8 +1,8 @@
 import os, cv2, traceback
 import numpy as np
 
-imgpath = 'put/path/here'
-outpath = ''
+imgpath = '/home/jordantreypatton/work/TableSegmentation/images_for_testing/Mexico/d1'
+outpath = '/home/jordantreypatton/work/TableSegmentation/deskewedOutputImg'
 
 def line_slope(l):
     if l[0,0] == l[0,2]: return 99999999
